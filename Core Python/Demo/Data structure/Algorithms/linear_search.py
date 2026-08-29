@@ -1,0 +1,14 @@
+def linearsearch(li,search_ele):
+    for ind in range(0,len(li)):
+        if(li[ind] == search_ele):
+            return ind
+    else:
+        return -1
+
+ele = int(input('Enter elementvto find : '))
+li=[45,34,81,77,53,343,26,82]   
+res = linearsearch(li,ele)
+if(res != -1):
+    print(f'{ele} is present at index {res}')   
+else:
+    print(f'{ele} is not present in list') 
